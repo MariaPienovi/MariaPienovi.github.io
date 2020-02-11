@@ -1,0 +1,252 @@
+/**
+ * 2.1 [CSS]: Añade un estilo que quite los márgenes y paddings al elemento cuerpo del documento (body)
+ * 2.2 [CSS]: Añade el color de fondo "#b7e3e4" al cuerpo del documento
+ * 2.3 [CSS]: El documento deberá tener un tamaño de fuente base de "18px" y un alto de línea de "1.25"
+ *
+ * Aprovechamos de aplicarlo tanto al <body> como al <html>
+ * El <html> es el único que puede contener el tamaño de fuente raíz o base
+ * El tamaño de fuente base es la medida a la que se relacionarán las unidades "rem" o "root em"
+ * "em" es otra unidad de medida, pero que es relativa al contenedor con tamaño de fuente más cercano
+ *
+ * Curiosidad:
+ * "em" viene de la letra "M" la cual se utilizaba como medida base para marcar el ancho de un caracter
+ */
+html, body {
+    background: #b7e3e4;
+    font-size: 18px;
+    line-height: 1.25;
+    padding: 0;
+    margin: 0;
+
+    /**
+     * 4.1 Añade una tipografía de Google Fonts
+     *   4.1.1 Si tienes tiempo, utiliza 2. Una solo para los titulares y la otra para el resto
+     *
+     * En este caso, la "Open Sans" la utilizaré para casi todos los elementos, por lo tanto,
+     * será mi familia tipográfica por defecto
+     *
+     * El resto de familias tipográficas son las de "fallback", en caso que no cargue correctamente
+     * o hasta que no haya cargado la tipo seleccionada. Y va de izquierda a derecha
+     * Para ello existen las llamadas web safe fonts: https://www.w3schools.com/cssref/css_websafe_fonts.asp
+     */
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/**
+ * 4.1 Añade una tipografía de Google Fonts
+ *   4.1.1 Si tienes tiempo, utiliza 2. Una solo para los titulares y la otra para el resto
+ *
+ * Y añadimos la "Merriweather" a todos los encabezados que necesitemos
+ */
+h1, h2, h3 {
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+/**
+ * 2.4 [CSS]: El titular principal deberá tener un tamaño de fuente de "4.5rem"
+ *
+ * Al tener un tamaño de fuente base de 18px ([2.3]), el tamaño final de este titular será
+ * de 81px = (4.5 x 18px)
+ */
+h1 {
+    font-size: 4.5rem;
+}
+
+/**
+ * 2.5 [CSS]: El titular secundario deberá tener un tamaño de fuente de "3rem"
+ *
+ * Al tener un tamaño de fuente base de 18px ([2.2]), el tamaño final de este titular será
+ * de 81px = (4.5 x 18px)
+ */
+h2 {
+    font-size: 3rem;
+}
+
+/**
+ * 3.1.4 [CSS]: Deben visualizarse con columnas y sin decoración ("·")
+ *
+ * Para visualizarse en columnas, la manera más sencilla es utilizando flexbox "flex"
+ * Por defecto, flex muestra todxs sus hijxs en una sola fila "row"
+ *
+ * La propiedad "list-style" es la que marca qué estilo de viñeta tendremos
+ * https://css-tricks.com/almanac/properties/l/list-style/ 👈🏽
+ *
+ * Y debemos eliminar (resetear) los estilos básicos que nos dan margen a la lista
+ * ya que ayudan a alinear la viñeta al resto del contenido
+ */
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/**
+ * 3.1.5 [CSS]: Posiciona de manera absoluta toda la cabecera y que ocupe todo el ancho
+ */
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+/**
+ * 3.2.2 [CSS]: Añade la imagen de fondo que se encuentra en la carpeta "assets > img"
+ * 3.2.3 [CSS]: Esta sección deberá tener un alto mínimo de "100vh" (Viewport Height)
+ * 3.2.4 [CSS]: La imagen debe cubrir todo el contenedor, no repetirse y estar centrada
+ *
+ * En este caso, el acceso a la ruta de la imagen se complicaba un poco. La carpeta de
+ * imágenes (img) se encuentra al mismo nivel que la carpeta de estilos (css), por lo
+ * tanto, teníamos que retroceder una carpeta para acceder a ella. "../" significa
+ * retroceder una carpeta
+ *
+ * Otra opción para poner la configuración del background sería lo siguiente, aunque es
+ * mejor utilizar la versión abreviada, nos ayuda a tener un archivo menos pesado:
+ *
+ * background-image: url(../img/seals.jpg);
+ * background-position: 50%;
+ * background-repeat: no-repeat;
+ *
+ * Alto mínimo = min-height
+ *
+ * La propiedad "position" solamente son para el punto 4.4, de esta manera nuestro
+ * contenido será el contenedor del velo
+ */
+.billboard {
+    background: url(../img/seals.jpg) 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+
+    /**
+     * 4.2 [CSS]: Centra el contenido del billboard en el medio del contenedor
+     * 
+     * La manera más sencilla de hacerlo es con Flexbox, con estas 3 propiedades centramos
+     * los hijos horizontal y verticalmente
+     */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+ * 4.4 [CSS]: Pon una capa con color de fondo "rgba(0, 0, 0, .75)" por encima de la imagen del Billboard, pero por debajo del texto
+ *      4.4.1 Si puedes hacerlo con un pseudo-elemento, mejor
+ *
+ * Un pseudo-elemento nos ahorra de escribir HTML innecesario en varios casos.
+ * Una capa o "velo" es el ejemplo perfecto para ejemplificar su uso. Para más información
+ * dejo estos links: https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos y 
+ * https://www.w3schools.com/css/css_pseudo_elements.asp
+ *
+ * La propiedad "content" es importante para los pseudo-elementos, de lo contrario no existirían
+ * Y para modificar su caja, necesitamos declararlo como un bloque (block)
+ * El rgba se refiere a colores RGB con Alpha u opacidad, que va de 0 a 1
+ * y el resto de propiedades es para darle tamaño y posicionarlo en la ventana
+ *
+ * Recordad que si utilizamos posición absoluta, esta debe de ser relativa a otro elemento
+ *
+ * ::before o ::after, depende de quién y cómo se utilice. Yo prefiero ::before en este caso, ya que
+ * está antes del contenido (jerarquía de contenido)
+ */
+.billboard::before {
+    background: rgba(0, 0, 0, .75);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+/**
+ * 4.2 [CSS]: Como máximo, este contenido del Billboard, deberá tener "35rem" de ancho
+ *
+ * Al igual que en la sección par deberíamos envolver el contenido en un elemento contenedor <div>
+ * y aplicar los estilos a dicho elemento. En este caso, el ancho máximo es una medida concreta
+ * 35rem (o 630px en una base de 18px - 35 x 18).
+ * Recordad que al aplicar Flexbox, los elementos pierden su ancho, así que es mejor definir su
+ * ancho al 100% ya que si tuviese poco contenido, su ancho, probablemente, sería menor de 35rem
+ *
+ * La propiedad "position" y "z-index" solamente son para el punto 4.4, de esta manera nuestro
+ * contenido estará por sobre el velo
+ */
+.billboard__wrapper {
+    max-width: 35rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+/**
+ * 3.2.6 [CSS]: Dale padding arriba y abajo de "2rem" a todas las secciones
+ * 3.2.7 [CSS]: Cada sección deberá tener un alto mínimo de "40vh" (Viewport Height)
+ *
+ * Al tener una clase para todas las secciones, podemos reaprovecharla para dar estilo a los
+ * elementos con esa clase
+ *
+ * En este caso, el uso del alto mínimo (min-height) es mucho más claro. Marcamos una altura mínima del
+ * elemento, pero si tuviese más contenido, seguiría creciendo
+ */
+.section {
+    min-height: 40vh;
+    padding: 2rem 0;
+}
+
+/**
+ * 3.2.8 [CSS]: Modifica el color de fondo a "#167c80" y el color de fuente a "#fff" solo a la sección par
+ *
+ * La manera más sencilla de realizar esta tarea es creando una clase especial que proporcione los estilos
+ * marcados por el enunciado. De esta manera podríamos reutilizarla en otras secciones.
+ *
+ * Existe una versión un poco más compleja, y es utilizando una propiedad de css llamada "pseudo-clase". 
+ * Para conseguir el mismo resultado la sintaxis sería:
+ *
+ * .section:nth-child(even) {
+ *      ... aplicamos los estilos...
+ * }
+ *
+ * En este caso estamos seleccionando los elemento pares (even) de un listado, al igual que podríamos hacerlo
+ * con los impares (odd)
+ * Para más información de este punto les dejo un enlace: https://developer.mozilla.org/es/docs/Web/CSS/:nth-child
+ */
+.even {
+    background: #167c80;
+    color: #fff;
+    text-align: center;
+}
+
+/**
+ * 3.2.10 [CSS]: En esta sección distinta: centra el texto, añade una imagen debajo del párrafo y como máximo deberá tener un ancho del 60% de su contenedor
+ *
+ * Ese elemento que creamos en HTML lo estilamos. Y en este caso utilizamos max-width, ya que
+ * necesitamos que sea como máximo 60% de su contenedor.
+ * Al añadir breakpoints (responsive, media queries) podríamos controlar que ese ancho máximo
+ * sea apartir de cierta medida de pantalla definida en el diseño
+ */
+.wrapper {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+/**
+ * 3.3.2 [CSS]: Dale color de fondo "#1b1d1c" y color de fuente "#fff"
+ * 3.3.3 [CSS]: Dale padding arriba y abajo de "1rem"
+ * 3.3.3 [CSS]: Centra el texto
+ *
+ * Finalmente terminamos las secciones. Ten en cuenta que hay mucha diferencia con:
+ * - Centrar el texto —- text-align: center;
+ * - Centrar el elemento —- margin: 0 auto;
+ *
+ * Centraremos el elemento cuando este tenga un ancho menor que su contenedor. Como el ejemplo
+ * de la sección par, y a la vez, podemos definir que el texto esté centrado.
+ */
+.footer {
+    background: #1b1d1c;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
