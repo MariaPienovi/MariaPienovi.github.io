@@ -1,0 +1,240 @@
+.wrapper{
+    max-width: 90%;
+    margin:auto;
+}
+header{
+    height: 112px;
+    width:100%;
+    background-color: #FFF;
+    box-shadow: 0px 2px 0px 0px;
+    color:rgba(0,0,0,0.1);
+
+}
+
+header .SocialMedia{
+    display: flex;
+    display:inline-block;
+    padding-top: 35px;
+}
+
+header .SocialMedia img{
+    height: 35px;
+    width: auto;
+}
+
+header .SocialMedia img:last-child{
+    padding-left: 50px;
+
+}
+
+header ul li{
+    list-style: none; 
+}
+
+header img{
+    width: 40px;
+    height: auto;
+    float: right;
+}
+header .menu{
+    padding-top: 35px;
+}
+header nav{
+    display: none;
+}
+
+#About h1{
+    font-family: PlayFair Display, sans-serif;
+    color: #8085BF;
+    font-size: 2.5em;
+    line-height: 0.2em;
+}
+#About h2{
+    font-family: Poppins, sans-serif;
+    Color:#F6AAB6;
+    font-size: 1.95em;
+    font-weight: 100;
+    line-height: 1em;
+}
+
+/*PROYECTOS*/
+
+#Mejores_Proyectos div{
+    background-color: #FFF;
+    border-top: 8px solid #8085BF;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding: 5%;
+    display: block;
+    box-shadow: 2px 2px 2px 2px;
+    color:rgba(0,0,0,0.1);
+}
+
+
+
+#Mejores_Proyectos h2{
+    font-family: poppins, sans-serif;
+    color: #8085BF;
+    text-align: center;
+    font-weight: 700;  
+
+}
+#Mejores_Proyectos h3{
+    font-family: poppins, sans-serif;
+    color: #8085BF;
+    text-align: center;
+    font-weight: 700;  
+    padding: 2% 5%;   
+}
+#Mejores_Proyectos h4{
+    font-family: poppins, sans-serif;
+    color: #8085BF;
+    font-weight: 400;
+    padding: 2% 5%;
+}
+#Mejores_Proyectos p{
+    font-family: poppins, sans-serif;
+    color: #8085BF;
+    font-weight: 100;
+    padding: 2% 5% ;
+}
+
+#Mejores_Proyectos input{
+    font-family: poppins, sans-serif;
+    font-size: 1em;
+    color: #FFF;
+    background-color: #F6AAB6;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 3% 6% 3% 6%;
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+/*CASE STYDY SPACE TRAVEL*/
+#Introduccion{
+    background-color: #EDEEFA;
+}
+#Introduccion h1{
+    font-family: playFair Display, sans-serif;
+    color: #404A9A;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+#Introduccion img{
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#Introduccion div p{
+    font-family: poppins, sans-serif;
+    color: #404A9A;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10%;
+}
+/*LE MOUTON */
+
+#intro_LeMouton img{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 5%;
+}
+
+
+#intro_LeMouton .slider{
+    background:url(IMG/Background_LeMouton.jpg) no-repeat center center; 
+    background-size: cover;
+    width:100%;
+    height:300px;
+}
+#intro_LeMouton div{
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+#intro_LeMouton div p{
+    font-family: poppins, sans-serif;
+    color: #2667BF;
+    font-weight: 300;
+    padding: 1% 10%;
+}
+
+#Modelos_Mochilas img{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#Modelos_Mochilas h2{
+    font-family: poppins, sans-serif;
+    color: #2667BF;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1em;
+
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+    header img{
+        display: none;
+    }
+header nav{
+    display: flex;
+    justify-content: space-between;    
+}
+
+header nav ul{
+    display: flex;
+}
+
+    header nav ul li{
+        list-style: none;
+        margin-top: 10px;
+        
+    }
+    header nav a{
+        font-family: poppins, sans-serif;
+        text-decoration: none;
+        color: #404A9A;
+        font-weight: 300;
+        font-size: 1.5em;
+  
+     }
+     header a:hover{
+        font-weight: 700;
+    }
+
+    /*LE MOUTON */
+    #intro_LeMouton img{
+        width: 20%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-bottom: 5%;
+    }
+
+    #intro_LeMouton .slider{
+        height: 500px;
+    }
+    #Modelos_Mochilas{
+        display: flex;
+    }
+}
