@@ -1,29 +1,43 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
 .wrapper{
     max-width: 90%;
     margin:auto;
 }
-header{
+
+.header{
     height: 112px;
     width:100%;
     background-color: #FFF;
-    box-shadow: 0px 2px 0px 0px;
-    color:rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
 
 }
 
-header .SocialMedia{
+.header__wrapper {
+    align-items: center;
     display: flex;
-    display:inline-block;
-    padding-top: 35px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.SocialMedia {
+    display: flex;
 }
 
 header .SocialMedia img{
     height: 35px;
     width: auto;
 }
-
-header .SocialMedia img:last-child{
-    padding-left: 50px;
+.SocialMedia__item:not(:first-child) {
+    padding-left: 30%;
 
 }
 
@@ -31,38 +45,61 @@ header ul li{
     list-style: none; 
 }
 
-header img{
+.menu {
+    display: block;
+}
+
+.menu img {
     width: 40px;
-    height: auto;
-    float: right;
 }
-header .menu{
-    padding-top: 35px;
-}
+
 header nav{
     display: none;
+}
+
+.fondo{
+    background-color: #EDEEFA;
+    width: 100%;
+    padding:0;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*position:absolute;*/
+}
+
+#About {
+    background: url(IMG/silueta_meme-03.svg) right bottom no-repeat;
+    height: 100%;
+    /*width: 105%*/
 }
 
 #About h1{
     font-family: PlayFair Display, sans-serif;
     color: #8085BF;
-    font-size: 2.5em;
-    line-height: 0.2em;
+    font-size: 1.5em;
+    line-height: 1.2;
 }
 #About h2{
     font-family: Poppins, sans-serif;
     Color:#F6AAB6;
-    font-size: 1.95em;
+    font-size: 1.2em;
     font-weight: 100;
-    line-height: 1em;
+    line-height: 1;
 }
+#About img{
+    display:none;
+}
+/*.fondo__wrapper{
+    padding-top: 40%;
+}*/
 
 /*PROYECTOS*/
 
 #Mejores_Proyectos div{
     background-color: #FFF;
     border-top: 8px solid #8085BF;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
@@ -70,15 +107,17 @@ header nav{
     display: block;
     box-shadow: 2px 2px 2px 2px;
     color:rgba(0,0,0,0.1);
+    /*position: relative;*/
 }
-
-
 
 #Mejores_Proyectos h2{
     font-family: poppins, sans-serif;
     color: #8085BF;
     text-align: center;
-    font-weight: 700;  
+    font-weight: 700; 
+    font-size: 1.2em;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
 }
 #Mejores_Proyectos h3{
@@ -100,23 +139,51 @@ header nav{
     font-weight: 100;
     padding: 2% 5% ;
 }
+.celular__spaceTravel{
+    display: none;
+}
 
-#Mejores_Proyectos input{
+.button{
     font-family: poppins, sans-serif;
     font-size: 1em;
     color: #FFF;
     background-color: #F6AAB6;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    text-decoration: none;
     display: block;
     padding: 3% 6% 3% 6%;
     border: none;
     border-radius: 3px;
 }
 
+/*FOOTER*/
+#footer{
+    border-top: 1px solid #404A9A;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#footer h4{
+    font-family: Poppins, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    color: #404A9A;
+    margin-top: 2%;
+}
+#footer p{
+    font-family: poppins, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: #404A9A
+}
 
 
-/*CASE STYDY SPACE TRAVEL*/
+
+/*CASE STUDY SPACE TRAVEL*/
 #Introduccion{
     background-color: #EDEEFA;
 }
@@ -150,6 +217,7 @@ header nav{
     margin-right: auto;
     display: block;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 
@@ -169,6 +237,12 @@ header nav{
     font-weight: 300;
     padding: 1% 10%;
 }
+#Modelos_Mochilas{
+    background-color: #EEF4FB;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+}
 
 #Modelos_Mochilas img{
     width: 80%;
@@ -182,22 +256,64 @@ header nav{
     font-family: poppins, sans-serif;
     color: #2667BF;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 300;
     font-size: 1em;
+    padding: 20px;
+}
 
+#fotoGigante img{
+display: none;
+}
+
+#Frase{
+    padding-bottom: 5%;
+}
+
+#Frase h3{
+    font-family: PlayFair display, sans-serif;
+    color: #2667BF;
+    font-size: 0.9em;
+    width: 80%;
+    font-weight: 100;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2em;
+}
+
+#Frase p{
+    font-family: poppins, sans-serif;
+    color: #2667BF;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+#RedesSociales{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 5%;
+}
+#RedesSociales img{
+    width: 50px;
+    padding:2%;
+    
 }
 
 
-
-
-
 @media screen and (min-width:768px){
-    header img{
+    .menu {
         display: none;
     }
+
 header nav{
     display: flex;
-    justify-content: space-between;    
+    float:right;
 }
 
 header nav ul{
@@ -214,11 +330,31 @@ header nav ul{
         text-decoration: none;
         color: #404A9A;
         font-weight: 300;
-        font-size: 1.5em;
-  
-     }
+        font-size: 1em;
+        padding-left: 100px;
+        }
      header a:hover{
         font-weight: 700;
+    }
+
+    /*#About {
+        background: url(IMG/silueta_meme-03.svg) right bottom no-repeat block;
+    }*/
+
+    #About h1{
+        font-size: 2.1em;
+
+    }
+    #About h2{
+        font-size: 1.7em;
+        font-weight: 100;
+        line-height: 1;
+    }
+
+    /*PROYECTOS*/
+
+    .celular__spaceTravel{
+        display: none;
     }
 
     /*LE MOUTON */
@@ -232,9 +368,106 @@ header nav ul{
     }
 
     #intro_LeMouton .slider{
-        height: 500px;
+        height: 350px;
     }
     #Modelos_Mochilas{
         display: flex;
+        background-color: #EEF4FB;
+        padding-top: 8%;
+        padding-bottom: 5%;
+        margin-bottom: 10%;
     }
+
+    #fotoGigante{
+        background-color: #EEF4FB;
+        padding-bottom: 10%;
+        margin-bottom: 10%;
+        margin-top: -10%;
+    }
+    #fotoGigante img{
+        display: block;
+        width:92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Frase h3{
+        font-family: PlayFair display, sans-serif;
+        color: #2667BF;
+        font-size: 1em;
+        width: 52%;
+        font-weight: 100;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 2em;
+    }
+    
+    #Frase p{
+        font-family: poppins, sans-serif;
+        color: #2667BF;
+        font-weight: 300;
+        font-size: 0.8em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2%;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    #About img{
+        display:block;
+        width: 40%;
+    }
+
+    /*PROYECTOS*/
+
+    #Mejores_Proyectos div{
+        width: 90%;
+        margin-bottom: 10%;
+        padding: 5%;
+    }
+    #Mejores_Proyectos h2{
+        font-weight: 700;  
+        font-size: 1.5em;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    
+    }
+    #Mejores_Proyectos h3{
+        font-weight: 700;  
+        text-align: left;
+        padding-left: 0;
+    }
+    #Mejores_Proyectos h4{
+        font-weight: 400;
+        text-align: left;
+        padding: 0;
+        width: 50%;
+    }
+    .proyecto1__wrapper{
+        /*display: flex;*/
+    }
+    #Mejores_Proyectos p{
+        font-weight: 100;
+        text-align: left;
+        padding: 0;
+        width: 50%;
+    }
+    .celular__spaceTravel{
+        display: inline-block;
+    }
+    .button{
+        font-size: 1em;
+        text-decoration: none;
+        padding: 2% 4% 2% 4%;
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        display: inline-block;
+    }
+
+
+    
 }
