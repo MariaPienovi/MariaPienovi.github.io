@@ -96,7 +96,7 @@ header nav{
 
 /*PROYECTOS*/
 
-#Mejores_Proyectos div{
+#Mejores_Proyectos .proyecto{
     background-color: #FFF;
     border-top: 8px solid #8085BF;
     width: 90%;
@@ -146,8 +146,10 @@ header nav{
 }
 
 .button{
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+}
+.button_holder{
+    text-align: center;
 }
 
 /*.button{
