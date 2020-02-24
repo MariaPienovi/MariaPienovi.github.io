@@ -139,11 +139,13 @@ header nav{
     padding: 2% 5% ;
     display:none;
 }
-.celular__spaceTravel{
+.celular__proyectos{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
 }
+
 
 .button{
     margin: auto;
