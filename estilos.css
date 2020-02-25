@@ -192,8 +192,6 @@ header nav{
     color: #404A9A
 }
 
-
-
 /*CASE STUDY SPACE TRAVEL*/
 #Introduccion{
     background-color: #EDEEFA;
@@ -201,9 +199,12 @@ header nav{
 #Introduccion h1{
     font-family: playFair Display, sans-serif;
     color: #404A9A;
-    width: 100%;
+    width: 90%;
     text-align: center;
-    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4em;
+    padding-top: 10%;
 }
 #Introduccion img{
     width: 70%;
@@ -211,7 +212,9 @@ header nav{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding-top: 10%;
 }
+
 #Introduccion div p{
     font-family: poppins, sans-serif;
     color: #404A9A;
@@ -219,6 +222,23 @@ header nav{
     font-weight: 300;
     padding: 10%;
 }
+#Mobile img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 10%;
+}
+#Mobile h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+    color: #404A9A;
+    padding-top: 5%;
+
+}
+
 /*LE MOUTON */
 
 #intro_LeMouton img{
