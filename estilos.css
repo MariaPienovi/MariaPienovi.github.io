@@ -65,27 +65,21 @@ header nav{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    /*position:absolute;*/
 }
-
 #About {
-    background: url(IMG/silueta_meme-03.svg) right bottom no-repeat;
     height: 100%;
-    /*width: 105%*/
 }
 
 #About h1{
     font-family: PlayFair Display, sans-serif;
-    color: #8085BF;
-    font-size: 1.5em;
-    line-height: 1.2;
+    color: #404A9A;
+    font-size: 2.5em;
 }
 #About h2{
     font-family: Poppins, sans-serif;
     Color:#F6AAB6;
-    font-size: 1.2em;
-    font-weight: 100;
-    line-height: 1;
+    font-size: 1.3em;
+    font-weight: 200;
 }
 #About img{
     display:none;
@@ -97,13 +91,12 @@ header nav{
 /*PROYECTOS*/
 
 #Mejores_Proyectos .proyecto{
-    background-color: #FFF;
-    border-top: 8px solid #8085BF;
-    width: 90%;
+    background-color: #EDEEFA;
+    border-top: 8px solid #404A9A;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10%;
     padding: 5%;
+    margin-bottom: 15%;
     display: block;
     box-shadow: 2px 2px 2px 2px;
     color:rgba(0,0,0,0.1);
@@ -111,32 +104,36 @@ header nav{
 
 #Mejores_Proyectos h2{
     font-family: poppins, sans-serif;
-    color: #8085BF;
+    color: #404A9A;
     text-align: center;
     font-weight: 700; 
-    font-size: 1.2em;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    font-size: 1.5em;
+    padding-top: 10%;
+    padding-bottom: 10%;
 
 }
 #Mejores_Proyectos h3{
     font-family: poppins, sans-serif;
-    color: #8085BF;
+    color: #404A9A;
     text-align: center;
+    font-size: 1.3em;
     font-weight: 700;  
-    padding: 2% 5%;   
+    padding: 2% 5%;
+    text-align: center;   
 }
 #Mejores_Proyectos h4{
     font-family: poppins, sans-serif;
-    color: #8085BF;
+    color: #404A9A;
     font-weight: 400;
+    font-size: 0.9em;
     padding: 2% 5%;
+    text-align: center;
 }
 #Mejores_Proyectos p{
     font-family: poppins, sans-serif;
-    color: #8085BF;
+    color: #404A9A;
     font-weight: 100;
-    padding: 2% 5% ;
+    padding: 2% 5%;
     display:none;
 }
 .celular__proyectos{
@@ -147,27 +144,17 @@ header nav{
 }
 
 
-.button{
+img .button{
     margin: auto;
+    width: 10px;
 }
 .button_holder{
     text-align: center;
-}
-
-/*.button{
-    font-family: poppins, sans-serif;
-    font-size: 1em;
-    color: #FFF;
-    background-color: #F6AAB6;
+    width: 15%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    padding: 3% 6% 3% 6%;
-    border: none;
-    border-radius: 3px;
-}*/
+}
+
 
 /*FOOTER*/
 #footer{
@@ -193,50 +180,80 @@ header nav{
 }
 
 /*CASE STUDY SPACE TRAVEL*/
-#Introduccion{
-    background-color: #EDEEFA;
-}
-#Introduccion h1{
-    font-family: playFair Display, sans-serif;
-    color: #404A9A;
-    width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.4em;
-    padding-top: 10%;
-}
-#Introduccion img{
+
+.wrapper__logo .logo__trabajos{
     width: 70%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.Introduccion{
+    WIDTH: 100%;
+    position: relative;
 }
 
-#Introduccion div p{
-    font-family: poppins, sans-serif;
-    color: #404A9A;
-    font-size: 1em;
-    font-weight: 300;
-    padding: 10%;
+.Introduccion__content {
+    background: url(IMG/Banner_SpaceTravel.png) no-repeat center center;
+    background-size: cover;
+    min-height: 800px;
 }
-#Mobile img{
-    width: 70%;
+
+.Introduccion h1{
+    font-family: poppins, sans-serif;
+    font-size: 1.5em;
+    color: #F79439;
+    font-weight: 700;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+
+}
+.Introduccion h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.Introduccion img{
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding-top: 10%;
+    padding-top: 20%;
 }
-#Mobile h2{
+
+#informacion p{
+    font-family: poppins, sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color: #404A9A;
+    padding-top: 15%;    
+}
+
+#Wireframes{
+    padding-top: 15%;
+}
+
+.wireframes__celular{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#Wireframes h3{
     font-family: poppins, sans-serif;
     font-size: 1.2em;
     font-weight: 200;
     text-align: center;
     color: #404A9A;
     padding-top: 5%;
-
+    padding-bottom: 15%;
 }
 
 /*LE MOUTON */
@@ -250,7 +267,6 @@ header nav{
     padding-bottom: 5%;
     padding-top: 5%;
 }
-
 
 #intro_LeMouton .slider{
     background:url(IMG/Background_LeMouton.jpg) no-repeat center center; 
@@ -266,13 +282,10 @@ header nav{
     font-family: poppins, sans-serif;
     color: #2667BF;
     font-weight: 300;
-    padding: 1% 10%;
 }
 #Modelos_Mochilas{
     background-color: #EEF4FB;
     padding-top: 20%;
-    padding-bottom: 10%;
-    margin-bottom: 10%;
 }
 
 #Modelos_Mochilas img{
@@ -300,6 +313,7 @@ display: none;
 
 #Frase{
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 #Frase h3{
@@ -337,6 +351,67 @@ display: none;
 }
 
 
+/*HERBIVORE*/
+
+.Introduccion_Herbivore{
+    WIDTH: 100%;
+    position: relative;
+}
+
+.Introduccion__content_herbivore{
+    background: url(IMG/Banners_Herbivore_Artboard\ 1\ copy.png) no-repeat center center;
+    background-size: cover;
+    min-height: 800px;
+    Width: 100%;
+}
+.Introduccion_Herbivore h1{
+    font-family: poppins, sans-serif;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.Introduccion_Herbivore h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+#informacion_Herbivore p{
+    font-family: poppins, sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color: #E68A98;
+    padding-top: 15%;
+}
+#Wireframes_Herbivore h3{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+    color:#E68A98;
+    padding-bottom: 10%;
+}
+
+#Wireframes_Herbivore{
+    padding-top: 15%;
+}
+
+.wireframes__celular_Herbivore{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
 @media screen and (min-width:768px){
     .menu {
         display: none;
@@ -368,16 +443,17 @@ header nav ul{
         font-weight: 700;
     }
 
-    /*#About {
+    #About {
         background: url(IMG/silueta_meme-03.svg) right bottom no-repeat block;
-    }*/
+        height: 100%;
+    }
 
     #About h1{
-        font-size: 2.1em;
+        font-size: 4em;
 
     }
     #About h2{
-        font-size: 1.7em;
+        font-size: 2em;
         font-weight: 100;
         line-height: 1;
     }
@@ -387,9 +463,60 @@ header nav ul{
         display:block;
     }
 
-    .celular__spaceTravel{
-        display: none;
+    
+    #Mejores_Proyectos h2{
+        font-family: poppins, sans-serif;
+        color: #404A9A;
+        text-align: center;
+        font-weight: 700; 
+        font-size: 2.5em;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    
     }
+    #Mejores_Proyectos h3{
+        font-family: poppins, sans-serif;
+        color: #404A9A;
+        text-align: center;
+        font-weight: 700;  
+        font-size: 2.5em;
+        padding: 2% 5%;   
+    }
+    #Mejores_Proyectos h4{
+        font-family: poppins, sans-serif;
+        color: #404A9A;
+        font-weight: 400;
+        font-size: 1.7em;
+        padding: 2% 5%;
+    }
+    #Mejores_Proyectos p{
+        font-family: poppins, sans-serif;
+        color: #404A9A;
+        font-weight: 100;
+        padding: 2% 5% ;
+        display:none;
+    }
+    .celular__proyectos{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    
+    img .button{
+        margin: auto;
+        width: 10px;
+    }
+    .button_holder{
+        text-align: center;
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+
 
     /*LE MOUTON */
     #intro_LeMouton img{
@@ -409,14 +536,10 @@ header nav ul{
         background-color: #EEF4FB;
         padding-top: 8%;
         padding-bottom: 5%;
-        margin-bottom: 10%;
     }
 
     #fotoGigante{
         background-color: #EEF4FB;
-        padding-bottom: 10%;
-        margin-bottom: 10%;
-        margin-top: -10%;
     }
     #fotoGigante img{
         display: block;
@@ -446,61 +569,208 @@ header nav ul{
         margin-right: auto;
         padding-top: 2%;
     }
+
+
+/*SPACE TRAVEL*/
+
+
+/*HERBIVORE*/
+.Introduccion_Herbivore{
+    background: url(IMG/Banners_Herbivore_Artboard\ 1\ copy.png) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    WIDTH: 100%;
+    position: relative;
+}
+.Introduccion_Herbivore h1{
+    font-family: poppins, sans-serif;
+    font-size: 2em;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-top:0;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.Introduccion_Herbivore h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#informacion_Herbivore p{
+    font-family: poppins, sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #E68A98;
+    padding-top: 5%;
+}
+#Wireframes_Herbivore h3{
+    font-family: poppins, sans-serif;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    color:#E68A98;
+}
+
+#Wireframes_Herbivore{
+    padding-top: 10%;
+}
+
+
 }
 
 
 @media screen and (min-width:992px) {
+    #About {
+        background: url(IMG/silueta_meme-03.svg) right bottom no-repeat;
+    }
+
     #About img{
         display:block;
         width: 40%;
     }
 
-    /*PROYECTOS*/
+    /*SPACE TRAVEL*/
 
-    #Mejores_Proyectos div{
-        width: 90%;
-        margin-bottom: 10%;
-        padding: 5%;
+    .wrapper__logo .logo__trabajos{
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
-    #Mejores_Proyectos h2{
-        font-weight: 700;  
-        font-size: 1.5em;
-        padding-top: 5%;
-        padding-bottom: 5%;
+    .Introduccion__content {
+        background: url(IMG/Banner_SpaceTravel.png) no-repeat center center;
+        background-size: cover;
+        min-height: 500px;
+    }
+
+    .Introduccion__content .wrapper {
+        display: flex;
+    }
+
+    .Introduccion h1{
+        font-family: poppins, sans-serif;
+        font-size: 2.5em;
+        color: #F79439;
+        font-weight: 700;
+        padding-top: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: left;
     
     }
-    #Mejores_Proyectos h3{
-        font-weight: 700;  
+    .Introduccion h2{
+        font-family: poppins, sans-serif;
+        font-size: 1.5em;
+        color: white;
+        font-weight: 300;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: left;
-        padding-left: 0;
-    }
-    #Mejores_Proyectos h4{
-        font-weight: 400;
-        text-align: left;
-        padding: 0;
-        width: 50%;
     }
 
-    #Mejores_Proyectos p{
-        font-weight: 100;
-        text-align: left;
-        padding: 0;
-        width: 50%;
+    .Introduccion img{
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
         display: block;
-    }
-    .celular__spaceTravel{
-        display: inline-block;
-    }
-    .button{
-        font-size: 1em;
-        text-decoration: none;
-        padding: 2% 4% 2% 4%;
-        border: none;
-        border-radius: 3px;
-        display: flex;
-        display: inline-block;
+        padding: 5% 0% 5% 0%;
     }
 
+    #informacion p{
+        font-family: poppins, sans-serif;
+        font-size: 1.2em;
+        font-weight: 100;
+        color: #404A9A;
+        padding-top: 2%;    
+    }
+
+
+#Wireframes{
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.wireframes__celular{
+    margin-left: auto;
+    margin-right: auto;
+}
+#Wireframes h3{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+    color: #404A9A;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+
+  /*HERBIVORE*/
+  .Introduccion_Herbivore{
+    WIDTH: 100%;
+    position: relative;
+}
+
+.Introduccion__content_herbivore{
+    background: url(IMG/Banners_Herbivore_Artboard\ 1\ copy.png) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    Width: 100%;
+}
+.Introduccion_Herbivore h1{
+    font-family: poppins, sans-serif;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.Introduccion_Herbivore h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 300;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+#informacion_Herbivore p{
+    font-family: poppins, sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color: #E68A98;
+    padding-top: 15%;
+}
+#Wireframes_Herbivore h3{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+    color:#E68A98;
+    padding-bottom: 10%;
+}
+
+#Wireframes_Herbivore{
+    padding-top: 15%;
+}
+
+.wireframes__celular_Herbivore{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
     
 }
