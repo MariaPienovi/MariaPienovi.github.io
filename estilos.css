@@ -239,7 +239,7 @@ img .button{
 }
 
 .fondo_celeste{
-    background-color: #EEF4FB;
+    background-color: #EDEEFA;
     margin-bottom:20%;
 }
 
@@ -274,11 +274,11 @@ h2{
 .boton_VerMas a{
     text-decoration: none;
     font-family: poppins, sans-serif;
-    color: #5D9CF2;
+    color: #404A9A;
     font-weight: 500;
-    background-color: #EEF4FB;
+    background-color: #EDEEFA;
     padding:4% 10% 4% 10%;
-    border: 1px solid #5D9CF2;
+    border: 1px solid #404A9A;
     border-radius: 5px;
 } 
 
@@ -295,10 +295,10 @@ h2{
 }
 
 #intro_LeMouton .slider{
-    background:url(IMG/Background_LeMouton.jpg) no-repeat center center; 
+    background:url(IMG/Banner_Le\ Mouton.png) no-repeat center center; 
     background-size: cover;
     width:100%;
-    height:300px;
+    height:600px;
 }
 #intro_LeMouton div{
     padding-top:2%;
@@ -308,11 +308,15 @@ h2{
     font-family: poppins, sans-serif;
     color: #2667BF;
     font-weight: 300;
+    font-size: 1em;
 }
-#Modelos_Mochilas{
+
+.fondo_azul{
     background-color: #EEF4FB;
     padding-top: 20%;
+    padding-bottom: 20%;
 }
+
 
 #Modelos_Mochilas img{
     width: 80%;
@@ -329,8 +333,16 @@ h2{
     margin-left: auto;
     margin-right: auto;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.3em;
     padding: 20px;
+}
+
+.informacion_LeMouton{
+    font-family: poppins, sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color: #2667BF;
+    padding-top: 5%;    
 }
 
 #fotoGigante img{
@@ -345,9 +357,10 @@ display: none;
 #Frase h3{
     font-family: PlayFair display, sans-serif;
     color: #2667BF;
-    font-size: 0.9em;
+    font-size: 1.1em;
     width: 80%;
     font-weight: 100;
+    padding-top: 5%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -358,11 +371,10 @@ display: none;
     font-family: poppins, sans-serif;
     color: #2667BF;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2%;
 }
 #RedesSociales{
     margin-left: auto;
@@ -374,6 +386,22 @@ display: none;
     width: 50px;
     padding:2%;
     
+}
+.boton_VerMas_LeMouton{
+    text-align: center;
+    padding-bottom: 25%;
+    padding-top:15%;
+}
+
+.boton_VerMas_LeMouton a{
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    color: #2667BF;
+    font-weight: 500;
+    background-color: #EEF4FB;
+    padding:4% 10% 4% 10%;
+    border: 1px solid #2667BF;
+    border-radius: 5px;
 }
 
 
