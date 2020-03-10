@@ -91,6 +91,7 @@ header ul li{
     font-family: PlayFair Display, sans-serif;
     color: #404A9A;
     font-size: 2.5em;
+    padding-top: 45%;
 }
 #About h2{
     font-family: Poppins, sans-serif;
@@ -101,11 +102,6 @@ header ul li{
 #About img{
     display:none;
 }
-/*.fondo__wrapper{
-    padding-top: 40%;
-}*/
-
-/*PROYECTOS*/
 
 #Mejores_Proyectos .proyecto{
     background-color: #EDEEFA;
@@ -267,7 +263,7 @@ img .button{
     display: block;
     width: 90%;
 }
-h2{
+.fondo_celeste h2{
     font-family: poppins, sans-serif;
     font-size: 1.2em;
     font-weight: 500;
