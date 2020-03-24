@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-.wrapper{
+.wrapper{   
     max-width: 90%;
     margin:auto;
 }
@@ -91,7 +91,7 @@ header ul li{
     font-family: PlayFair Display, sans-serif;
     color: #404A9A;
     font-size: 2.5em;
-    padding-top: 45%;
+    padding-top: 45%;   
 }
 #About h2{
     font-family: Poppins, sans-serif;
@@ -175,22 +175,12 @@ img .button{
     border-top: 1px solid #404A9A;
     margin-left: 5%;
     margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
+#footer img{
+    padding-left: 5%;
 
-#footer h4{
-    font-family: Poppins, sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    text-align: center;
-    color: #404A9A;
-    margin-top: 2%;
-}
-#footer p{
-    font-family: poppins, sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    text-align: center;
-    color: #404A9A
 }
 
 /*CASE STUDY SPACE TRAVEL*/
@@ -477,6 +467,23 @@ display: none;
     margin-right: auto;
     display: block;
 }
+.Herbivore_Desktop {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+}
+
+.subtitulo_Desktop h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    color: #E68A98;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
 
 .boton_VerMas_Herbivore{
     text-align: center;
@@ -503,7 +510,7 @@ display: none;
         height: 83vh;
         right: -500px;
         max-width: 320px;
-        position: absolute;
+        position: fixed;
         top: 0;
         transition: right 1.5s ease-in-out;
         width: 100%;
