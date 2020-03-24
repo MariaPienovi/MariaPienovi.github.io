@@ -461,6 +461,10 @@ display: none;
     padding-top:10%;
 }
 
+#Wireframes_Herbivore{
+    display: block;
+}
+
 .wireframes__celular_Herbivore{
     width: 100%;
     margin-left: auto;
@@ -501,6 +505,18 @@ display: none;
     padding:4% 10% 4% 10%;
     border: 1px solid #E58A98;
     border-radius: 5px;
+}
+
+#footer_Herbivore{
+    border-top: 1px solid #E58A98;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#footer_Herbivore img{
+    padding-left: 5%;
+
 }
 
 
@@ -700,13 +716,6 @@ header nav ul{
 
 
 /*HERBIVORE*/
-.Introduccion_Herbivore{
-    background: url(IMG/Banners_Herbivore_Artboard\ 1\ copy.png) no-repeat center center;
-    background-size: cover;
-    height: 500px;
-    WIDTH: 100%;
-    position: relative;
-}
 .Introduccion_Herbivore h1{
     font-family: poppins, sans-serif;
     font-size: 2em;
@@ -725,6 +734,18 @@ header nav ul{
     padding-left: 5%;
     padding-right: 5%;
 }
+
+
+.fondo_celeste h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    color: #404A9A;
+    padding-top: 5%;
+}
+
+
 #informacion_Herbivore p{
     font-family: poppins, sans-serif;
     font-size: 1.5em;
@@ -743,6 +764,7 @@ header nav ul{
 #Wireframes_Herbivore{
     padding-top: 10%;
 }
+*/
 
 
 }
@@ -812,9 +834,29 @@ header nav ul{
         font-size: 1.2em;
         font-weight: 100;
         color: #404A9A;
-        padding-top: 2%;    
+        padding-top: 2%; 
+        width: 70%;
+        text-align: center;   
+        margin-left: auto;
+        margin-right: auto;
     }
 
+
+
+.fondo_celeste{
+     background-color: #EDEEFA;
+    margin-bottom:5%;
+    }
+    
+.fondo_celeste h2{
+    font-family: poppins, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    color: #404A9A;
+    padding-top: 3%;
+    padding-bottom: 0;
+    }
 
 #Wireframes{
     padding-top: 15%;
@@ -827,6 +869,11 @@ header nav ul{
     margin-left: auto;
     margin-right: auto;
 }
+
+#Wireframes{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 #Wireframes h3{
     font-family: poppins, sans-serif;
     font-size: 1.2em;
@@ -836,5 +883,55 @@ header nav ul{
     padding-top: 5%;
     padding-bottom: 15%;
 }
+
+#Wireframes_HiFi{
+    display:flex;
+}
+
+.Version_Desktop{
+    display: flex;
+}
+
+.Desktop img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.boton_VerMas{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.boton_VerMas a{
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    color: #404A9A;
+    font-weight: 500;
+    background-color: #EDEEFA;
+    padding:1% 4% 1% 4%;
+    border: 1px solid #404A9A;
+    border-radius: 5px;
+} 
+/*FOOTER*/
+#footer{
+    border-top: 1px solid #404A9A;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#footer img{
+    padding-left: 3%;
+
+}
+
+/*HERBIVORE*/
+
+#Wireframes_Herbivore{
+}
+
+
     
 }
