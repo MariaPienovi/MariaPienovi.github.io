@@ -99,6 +99,11 @@ header ul li{
     font-size: 1.3em;
     font-weight: 200;
 }
+#About p{
+    font-family: Poppins, sans-serif;
+    color: #404A9A;
+    display: none;
+}
 #About img{
     display:none;
 }
@@ -518,6 +523,38 @@ display: none;
     padding-left: 5%;
 
 }
+/*CONTACTO*/
+
+.fondo_contacto{
+    background-color: #8085BF;
+    width: 100%;
+    padding:0;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#Contact_Me h1{
+    font-family: PlayFair Display, sans-serif;
+    color: #EDEEFA;
+    font-size: 2.5 em;
+}
+
+#Contact_Me h2{
+    font-family: Poppins, sans-serif;
+    color: #EDEEFA;
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+#Contact_Me p{
+    display: none;
+}
+
+
+
+
 
 
 @media screen and (max-width: 767px) {
@@ -764,8 +801,6 @@ header nav ul{
 #Wireframes_Herbivore{
     padding-top: 10%;
 }
-*/
-
 
 }
 
@@ -779,6 +814,101 @@ header nav ul{
         display:block;
         width: 40%;
     }
+
+
+
+/*ABOUT*/
+#About h1{
+    color: #404A9A;
+    font-size: 4em;
+    padding-top: 15%;
+    padding-bottom:1%;
+}
+#About h2{
+    Color:#F6AAB6;
+    font-size: 3.12em;
+    font-weight: 200;
+}
+#About p{
+    font-family: Poppins, sans-serif;
+    color: #404A9A;
+    display: block;
+    width: 50%;
+    font-weight: 100;
+}
+
+.columna_padre{
+    display: flex;
+    height:100%;
+    min-height: 150px;
+}
+.columna_1{
+    width: 60%;
+    min-width: 1000px;
+}
+.columna_2{
+    width:100%;
+    min-width: 310px;
+
+}
+
+
+#Mejores_Proyectos .proyecto{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4%;
+    margin-bottom: 5%;
+    display: block;
+}
+
+#Mejores_Proyectos h2{
+    text-align: center;
+    font-weight: 700; 
+    font-size: 1.7em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+#Mejores_Proyectos h3{
+    text-align: left;
+    font-size: 1.7em;
+    font-weight: 700;  
+    padding: 2% 2%;
+}
+#Mejores_Proyectos h4{
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 0% 2%;
+    text-align: left;
+    width: 90%;
+}
+#Mejores_Proyectos p{
+    font-size: 1em;
+    font-weight: 100;
+    padding: 0% 2%;
+    width: 90%;
+    display: block;
+}
+.celular__proyectos{
+    width: 60%;
+}
+
+.button img{
+    width: 40px;
+    position: relative;
+    display: flex;
+    left: 0;
+    
+}
+.button_holder{
+    text-align: center;
+    position: absolute;
+    left: 10%;
+
+
+}
+
+
 
     /*SPACE TRAVEL*/
 
@@ -924,13 +1054,120 @@ header nav ul{
 }
 #footer img{
     padding-left: 3%;
-
 }
 
 /*HERBIVORE*/
 
-#Wireframes_Herbivore{
+.Introduccion_Herbivore h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-top: 10%;
+    text-align: left;
 }
+.Introduccion_Herbivore h2{
+    font-size: 1.5em;
+    color: #E68A98;
+    font-weight: 300;
+    text-align: left;
+    width: 60%;
+}
+
+
+#informacion_Herbivore p{
+    font-size: 1.2em;
+    font-weight: 100;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+    width: 70%;
+    text-align: center;   
+    margin-left: auto;
+    margin-right: auto;
+}
+#Wireframes_Herbivore{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    padding-bottom: 0;
+    padding-top:0;
+}
+
+.wireframes__celular_Herbivore{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boton_VerMas_Herbivore{
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top:5%;
+}
+
+.boton_VerMas_Herbivore a{
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+    color: #E58A98;
+    font-weight: 500;
+    background-color: #F5E9EE;
+    padding:1% 4% 1% 4%;
+    border: 1px solid #E58A98;
+    border-radius: 5px;
+}
+#footer_Herbivore{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#footer_Herbivore img{
+    padding-left: 3%;
+}
+
+/*CONTACT ME*/
+#Contact_Me {
+    background: url(IMG/silueta_meme_contacto.svg) right bottom no-repeat;
+    height: 100%;
+}
+
+#Contact_Me img{
+    display:block;
+    width: 40%;
+}
+
+
+
+/*ABOUT*/
+
+.fondo_contacto{
+    background-color: #8085BF;
+    width: 100%;
+    padding:0;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   margin-bottom:5%;
+}
+
+#Contact_Me h1{
+color: #EDEEFA;
+font-size: 4em;
+padding-top: 15%;
+padding-bottom:1%;
+}
+#Contact_Me h2{
+Color:#EDEEFA;
+font-size: 1.9em;
+font-weight: 200;
+}
+
+#Contact_Me p{
+    font-family: poppins, sans-serif;
+    color: #EDEEFA;
+    width: 60%;
+    font-weight: 100;
+}
+
 
 
     
