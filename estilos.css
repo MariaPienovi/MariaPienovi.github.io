@@ -532,18 +532,20 @@ display: none;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 10%;
 }
 
 #Contact_Me h1{
     font-family: PlayFair Display, sans-serif;
     color: #EDEEFA;
-    font-size: 2.5 em;
+    font-size: 2.5em;
+    padding-top: 90%;
 }
 
 #Contact_Me h2{
     font-family: Poppins, sans-serif;
     color: #EDEEFA;
-    font-size: 0.8em;
+    font-size: 1.2em;
     font-weight: 200;
 }
 
@@ -634,6 +636,7 @@ header nav ul{
         font-weight: 100;
         line-height: 1;
     }
+    
 
     /*PROYECTOS*/
     #Mejores_Proyectos p{
